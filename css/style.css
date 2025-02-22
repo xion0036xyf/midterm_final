@@ -18,7 +18,7 @@ body {
     align-items: center;
     width: 100%;
     max-width: 500px;
-    height: 150px;
+    height: 85px;
 }
 
 .header-container  h1 {
@@ -26,16 +26,16 @@ body {
     color: white;
     flex: 1;
     padding-top: 20px;
-    font-size: 2.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    word-spacing: 1rem;
+    word-spacing: 0.5rem;
 }
 
 .header-container nav {
     flex: 1;
     width: 100%;
     max-width: 500px;
-    padding-top: 20px;
+    /* padding-top: 3px; */
 }
 
 .header-container nav ul {
@@ -44,7 +44,7 @@ body {
     justify-content:space-between;
     width: 100%;
     max-width: 500px;
-    padding: 0 30px;
+    padding: 0 10px;
     list-style: none;
 
 }
@@ -59,7 +59,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 0.6rem;
 }
 
 /* -------The first section------ */
@@ -69,50 +69,54 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 680px;
+    height: 340px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 65px;
+    padding-bottom: 45px;
     padding-left: 10%;
     padding-right: 10%;
-    gap: 8px;
+    gap: 4px;
 
 }
 
 .hero h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .hero p {
-    font-size: 1rem;
+    font-size: 0.5rem;
     /* word-spacing: 1px; */
     /* padding: 0 20px; */
 }
 
 .hero p:nth-child(3){
-    margin-top: 20px;
-    font-size: 1.1rem;
+    
+    margin-top: 10px;
+    font-size: 0.5rem;
+    /* max-width: 180px; */
+    /* text-align: center; */
 }
 
 .hero p:nth-child(1) {
     word-spacing: 5px;
     font-weight: 600;
 }
+
 /* ----------The Second Section---------- */
 
 
 .locals {
-    padding-top: 30px;
-    margin-bottom: 70px;
+    padding-top: 15px;
+    margin-bottom: 35px;
 }
 
 .locals h2 {
-    font-size: 2.2rem;
+    font-size: 1.1rem;
     text-align: center;
-    margin: 20px 30px;
+    margin: 10px 15px;
     font-weight: 800;
 }
 
@@ -177,22 +181,22 @@ body {
     "moon"
     "mars";
     justify-items: center;
-    gap: 30px;
+    gap: 15px;
 
 }
 
 .planets div {
-    gap: 20px;
+    gap: 10px;
 }
 
 .planets div img {
-    width: 270px;
-    height: 270px;
+    width: 135px;
+    height: 135px;
     object-fit: cover;
 }
 
 .planets div p {
-    font-size:1.5rem;
+    font-size:0.75rem;
     font-weight: 800;
 }
 
@@ -201,11 +205,11 @@ body {
     text-decoration: none;
     display: inline-block;
     max-width: 200px;
-    padding: 3px 20px;
+    padding: 1.5px 10px;
     background-color: rgb(135, 27, 149);
     border-radius: 50px;
     align-self: center;
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     font-weight: 700;
     margin: 0 15px;
 }
@@ -217,12 +221,482 @@ body {
 
 .footer p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     font-weight: 700;
 }
 
 .footer {
-    padding: 20px 20px;
+    padding: 10px 10px;
     margin-top: 30px;
     /* border-top: 1px solid white; */
+}
+
+
+@media (min-width: 500px) and (max-width: 900px) {
+    .wrapper {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    /* ---------The header---------- */
+    
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 900px;
+        height: 85px;
+
+    }
+    
+    .header-container  h1 {
+        font-family: 'Playfair Display',serif;
+        color: white;
+        /* padding-top: 20px; */
+        font-size: 1.2rem;
+        font-weight: 500;
+        word-spacing: 0.5rem;
+        margin-top: -5px;
+
+    }
+    
+    .header-container nav {
+        /* flex: 1; */
+        width: 100%;
+        max-width: 250px;
+        /* padding-top: 3px; */
+    }
+    
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row; 
+        justify-content:space-between;
+        width: 100%;
+        max-width: 900px;
+        padding: 0 10px;
+        list-style: none;
+    
+    }
+    
+    .header-container nav ul li {
+        flex: 1;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .header-container nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.6rem;
+    }
+    
+    /* -------The first section------ */
+    
+    .hero {
+        background-image: url('../images/milky-way.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 340px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-bottom: 30px;
+        /* padding-left: 10%; */
+        /* padding-right: 10%; */
+        gap: 4px;
+        width: 100%;
+        margin: 0 -20px;
+        /* max-width: 100%; */
+    
+    }
+
+    
+    .hero h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    
+    .hero p {
+        font-size: 0.5rem;
+        /* word-spacing: 1px; */
+        /* padding: 0 20px; */
+    }
+    
+    .hero p:nth-child(3){
+        
+        margin-top: 10px;
+        font-size: 0.5rem;
+        /* max-width: 180px; */
+        /* text-align: center; */
+    }
+    
+    .hero p:nth-child(1) {
+        word-spacing: 5px;
+        font-weight: 600;
+    }
+    
+    /* ----------The Second Section---------- */
+    
+    
+    .locals {
+        padding-top: 15px;
+        margin-bottom: 35px;
+    }
+    
+    .locals h2 {
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 10px 15px;
+        font-weight: 800;
+    }
+    
+    .planets .sun {
+        grid-area:sun;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .planets .moon {
+        grid-area:moon;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .planets .mercury {
+        grid-area:mercury;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .planets .mars{
+        grid-area:mars;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    .planets .venus{
+        grid-area:venus;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .planets .earth{
+        grid-area:earth;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    .planets {
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-areas: 
+        "sun mercury venus"
+        "earth moon mars";
+        justify-items: center;
+        gap: 15px;
+    
+    }
+    
+    .planets div {
+        gap: 10px;
+    }
+    
+    .planets div img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+    }
+    
+    .planets div p {
+        font-size:0.75rem;
+        font-weight: 800;
+    }
+    
+    .planets div a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        max-width: 200px;
+        padding: 1.5px 10px;
+        background-color: rgb(135, 27, 149);
+        border-radius: 50px;
+        align-self: center;
+        font-size: 0.6rem;
+        font-weight: 700;
+        margin: 0 15px;
+    }
+    
+    
+    
+    
+    /* ----------The footer--------- */
+    
+    .footer p {
+        text-align: center;
+        font-size: 0.6rem;
+        font-weight: 700;
+    }
+    
+    .footer {
+        padding: 10px 10px;
+        margin-top: 30px;
+        /* border-top: 1px solid white; */
+    }
+}
+
+@media (min-width: 901px) {
+    .wrapper {
+        width: 70%;
+        /* max-width: 500px; */
+        margin: 0 auto;
+        max-width: none;
+    }
+    
+    /* ---------The header---------- */
+    
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: space-between;
+        width: 100%;
+        /* max-width: 500px; */
+        height: 70px;
+        max-width: none;
+        align-items: center;
+    }
+    
+    .header-container  h1 {
+        font-family: 'Playfair Display',serif;
+        color: white;
+        /* flex: 1; */
+        padding-top: 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+        word-spacing: 0.5rem;
+    }
+    
+    .header-container nav {
+        /* flex: 1; */
+        width: auto;
+        max-width: 500px;
+        /* padding-top: 3px; */
+        margin-left: auto;
+        /* flex-grow: 0; */
+    }
+    
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row; 
+        justify-content:space-between;
+        width: 100%;
+        /* max-width: 500px; */
+        /* padding: 0 10px; */
+        list-style: none;
+    
+    }
+    
+    .header-container nav ul li {
+        /* flex: 1; */
+        margin: 0;
+        text-align: center;
+    }
+    
+    .header-container nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    
+    /* -------The first section------ */
+    
+    .hero {
+        background-image:url('../images/milky-way.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-bottom: 30px;
+        /* padding-left: 10%; */
+        /* padding-right: 10%; */
+        gap: 4px;
+        width: 100%;
+        margin: 0 -20px;
+    
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        /* word-spacing: 1px; */
+        /* padding: 0 20px; */
+    }
+    
+    .hero p:nth-child(3){
+        
+        margin-top: 10px;
+        font-size: 1rem;
+        /* max-width: 180px; */
+        /* text-align: center; */
+    }
+    
+    .hero p:nth-child(1) {
+        word-spacing: 5px;
+        font-weight: 600;
+    }
+    
+    /* ----------The Second Section---------- */
+    
+    
+    .locals {
+        padding-top: 15px;
+        margin-bottom: 35px;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .locals h2 {
+        font-size: 1.5rem;
+        text-align:left;
+        margin: 10px 15px;
+        font-weight: 800;
+    }
+    
+    .planets .sun {
+        grid-area:sun;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .planets .moon {
+        grid-area:moon;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .planets .mercury {
+        grid-area:mercury;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .planets .mars{
+        grid-area:mars;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    .planets .venus{
+        grid-area:venus;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .planets .earth{
+        grid-area:earth;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    .planets {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        "sun mercury venus earth moon mars";
+        justify-items: center;
+        gap: 15px;
+    
+    }
+    
+    .planets div {
+        gap: 10px;
+    }
+    
+    .planets div img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+    
+    .planets div p {
+        font-size:0.75rem;
+        font-weight: 800;
+    }
+    
+    .planets div a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        max-width: 200px;
+        padding: 1.5px 10px;
+        background-color: rgb(135, 27, 149);
+        border-radius: 50px;
+        align-self: center;
+        font-size: 0.6rem;
+        font-weight: 700;
+        margin: 0 15px;
+    }
+    
+    
+    
+    
+    /* ----------The footer--------- */
+    
+    .footer p {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .footer {
+        padding: 10px 10px;
+        margin-top: 30px;
+        /* border-top: 1px solid white; */
+    }
+    
 }
