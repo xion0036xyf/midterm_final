@@ -1,3 +1,8 @@
+:root {
+  --main-color:rgb(32, 118, 164);
+}
+
+
 body {
     font-family:'lato',sans-serif;
     background-color: black;
@@ -101,7 +106,7 @@ a:focus {
     font-weight: 700;
     font-size: 0.7rem;
     padding: 4px 10px;  
-    background-color: rgb(84, 118, 180); 
+    background-color: var(--main-color); 
     border-radius: 25px; 
     border: none; 
     transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
@@ -113,7 +118,7 @@ a:focus {
 }
 
 .header-container nav ul li a:hover {
-    background-color: rgb(56, 194, 194);
+    background-color: rgb(83, 225, 211);
     transform: scale(1.1);
     font-size: 1rem;    
 }
@@ -129,7 +134,7 @@ a:focus {
     height: 10px;  
     right: 0; 
     bottom: 10px; 
-    background:  rgb(21, 91, 190);
+    background:var(--main-color);
     transform: scaleX(1.1);
     z-index: -1;
 }
