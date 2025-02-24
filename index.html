@@ -9,14 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper">        
     <!-- set up a wrapper to confirm the width -->
-        <header>
+        <ul class="skip-links">
+            <li><a href="#nav">Skip to nav</a></li>
+            <li><a href="#main">Skip to content</a></li>
+        </ul>
+    <!-- set up accessibility link -->
+        <header role="banner">
             <div class="header-container">
                 <h1>THE <span class="stripe">SYSTEM</span></h1>
-                <nav>
+                <nav role="navigation">
                    <ul>
                      <li><a href="">Planets</a></li>
                      <li><a href="">Interstellar</a></li>
@@ -26,7 +32,7 @@
             </div>
             
         </header>
-        <main>
+        <main role="main">
             <section class="hero">
                 <img src="images/milky-way.jpg" alt="Hero image of the milky way galaxy on the homepage">
                 <div class="hero-text">
@@ -80,7 +86,7 @@
     
         </main>
     
-        <footer class="footer">
+        <footer role="contentinfo"  class="footer">
             <p>&copy;2024 - The System</p>
         </footer>
     </div>

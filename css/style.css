@@ -13,6 +13,41 @@ body {
     position: relative; 
 }
 
+/* --------style the accessibility */
+
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skip-links a{
+    position: absolute;
+    top: -10rem;
+    left: 40%;
+    transform: translateX(-50%);
+    background-color:white;
+    color:black;
+    padding:0.3rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end; /* 让文字靠底部 */
+    height: 3rem;
+
+}
+
+.skip-links a:focus{
+    top: -1rem;
+    /* border: 2px solid red; */
+    outline: 2px solid red;
+}
+
+a:focus {
+    outline: 2px solid red; /* 如果不想要默认的 `outline`，可以去掉 */
+}
+
+
 /* ---------The header---------- */
 
 .header-container {
